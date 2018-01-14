@@ -8,6 +8,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 search: true
 ---
+# Introduction
+
 This is unofficial documentation for the Client API of the Blink Wire-Free HD Home Monitoring & Alert System based on [BlinkMonitorProtocol](https://github.com/MattTW/BlinkMonitorProtocol) and [Blink](https://github.com/keredson/blink).
 
 I am not affiliated with the company in any way - this documentation is strictly "AS-IS". My goal was to uncover enough to arm and disarm the system programatically so that I can issue those commands in sync with my home alarm system arm/disarm. Just some raw notes at this point but should be enough for creating programmatic APIs. Lots more to be discovered and documented - feel free to contribute!
@@ -639,6 +641,7 @@ JSON response containing a set of video information, including: camera name, cre
 
 <aside class="notice">
 If <code>pagenumber</code> is 0, you will retrieve some latest video clips.
+
 If <code>pagenumber</code> is larger than 0, you will retrieve some earlier video clips.
 </aside>
 
@@ -1528,6 +1531,7 @@ curl -X GET \
   -H 'TOKEN_AUTH: {{yourauthtoken}}'
 ```
 
+Response: Unknown
 
 ## Get Program Info
 
@@ -1542,3 +1546,9 @@ curl -X GET \
   https://rest.{{yourregion}}.immedia-semi.com/api/v1/networks/{{yournetworkid}}/programs \
   -H 'TOKEN_AUTH: {{yourauthtoken}}'
 ```
+
+Response: Unknown
+
+# Contact
+
+duangenquan@gmail.com
