@@ -71,20 +71,51 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "authtoken": {
-        "authtoken": "yourauthtoken",
-        "message": xxx
+  "account": {
+    "account_id": XXXXXX,
+    "country": "FR",
+    "user_id": XXXXXX,
+    "client_id": XXXXXX,
+    "client_trusted": false,
+    "new_account": false,
+    "tier": "XXXX",
+    "region": "XX",
+    "account_verification_required": false,
+    "phone_verification_required": false,
+    "client_verification_required": true,
+    "require_trust_client_device": true,
+    "country_required": false,
+    "verification_channel": "phone",
+    "user": {
+      "user_id": XXXXXX,
+      "country": "XX"
     },
-    "networks": {
-        "networkid": {
-            "name": xxx
-            "onboarded": xxx
-        }
+    "amazon_account_linked": false,
+    "braze_external_id": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  },
+  "auth": {
+    "token": "XXXXXXXXXXXXXXXXXXXXXXXXX"
+  },
+  "phone": {
+    "number": "+XX*****XXXX",
+    "last_4_digits": "XXXX",
+    "country_calling_code": "XX",
+    "valid": true
+  },
+  "verification": {
+    "email": {
+      "required": false
     },
-    "region": {
-        "yourregion": xxx
+    "phone": {
+      "required": true,
+      "channel": "sms"
     }
+  },
+  "lockout_time_remaining": 0,
+  "force_password_reset": false,
+  "allow_pin_resend_seconds": 90
 }
+
 ```
 
 **HTTP Request**
